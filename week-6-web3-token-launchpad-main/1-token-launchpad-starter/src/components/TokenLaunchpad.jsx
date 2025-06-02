@@ -20,4 +20,3 @@ export function TokenLaunchpad() {
     </div>
 }
 // This component is a simple form for creating a token on Solana.
-// It includes fields for the token name, symbol, image URL, and initial supply.
