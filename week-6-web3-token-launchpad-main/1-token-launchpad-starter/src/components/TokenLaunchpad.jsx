@@ -19,5 +19,3 @@ export function TokenLaunchpad() {
         <button onClick={createToken} className='btn'>Create a token</button>
     </div>
 }
-// This component is a simple form for creating a token on Solana.
-// It includes fields for the token name, symbol, image URL, and initial supply.
