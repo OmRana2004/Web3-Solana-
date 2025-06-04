@@ -20,3 +20,4 @@ export function TokenLaunchpad() {
     </div>
 }
 // adding a comment to test the code
+// This is a simple token launchpad component that allows users to create a token by providing its name, symbol, image URL, and initial supply.
