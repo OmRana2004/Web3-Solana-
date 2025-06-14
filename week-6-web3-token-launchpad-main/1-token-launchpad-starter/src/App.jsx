@@ -42,4 +42,3 @@ export default App;
 // The main App component wraps the TokenLaunchpad in a ConnectionProvider and WalletProvider, allowing users to connect their wallets and interact with the Solana blockchain.
 // The WalletMultiButton and WalletDisconnectButton components provide UI elements for users to connect and disconnect their wallets, respectively. The application is designed to be simple and user-friendly, making it easy for users to launch tokens on the Solana blockchain.   
 // The TokenLaunchpad component is where the main functionality of launching tokens will be implemented. It is expected to handle the logic for creating and managing token launches, including user interactions and blockchain transactions.
-// The application is structured to be modular, allowing for easy expansion and customization in the future. Developers can add more features or modify existing ones without affecting the overall architecture of the application.
