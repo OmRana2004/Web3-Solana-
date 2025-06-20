@@ -19,4 +19,4 @@ export function TokenLaunchpad() {
         <button onClick={createToken} className='btn'>Create a token</button>
     </div>
 }
-// adding a comment to test the code// This is a simple 
+// adding a comment to test the code// This is 
