@@ -21,4 +21,3 @@ export function TokenLaunchpad() {
 }
 //https://solana-labs.github.io/solana-web3.js/classes/Connection.html
 //https://solana-labs.github.io/solana-web3.js/classes/Keypair.html
-//https://solana-labs.github.io/solana-web3.js
