@@ -19,3 +19,7 @@ export function TokenLaunchpad() {
         <button onClick={createToken} className='btn'>Create a token</button>
     </div>
 }
+//https://solana-labs.github.io/solana-web3.js/classes/Connection.html
+//https://solana-labs.github.io/solana-web3.js/classes/Keypair.html
+//https://solana-labs.github.io/solana-web3.js/classes/Transaction.html
+//https://solana-labs.github.io/solana-web3.js/classes/SystemProgram.html
