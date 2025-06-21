@@ -20,4 +20,3 @@ export function TokenLaunchpad() {
     </div>
 }
 //https://solana-labs.github.io/solana-web3.js/classes/Connection.html
-//https://
