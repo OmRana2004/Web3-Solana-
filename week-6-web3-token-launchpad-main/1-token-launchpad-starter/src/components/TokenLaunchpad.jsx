@@ -23,5 +23,4 @@ export function TokenLaunchpad() {
 // 1. Create a token on Solana
 // 2. Create a token on Ethereum
 // 3. Create a token on Polygon
-// 4. Create a token on Binance Smart Chain
-// 5. Create a 
+// 4. Create a token on Binance Smart Chain 
