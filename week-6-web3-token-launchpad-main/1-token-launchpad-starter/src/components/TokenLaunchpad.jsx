@@ -20,4 +20,3 @@ export function TokenLaunchpad() {
     </div>
 }
 //d apps        
-// 1. Create a token on 
