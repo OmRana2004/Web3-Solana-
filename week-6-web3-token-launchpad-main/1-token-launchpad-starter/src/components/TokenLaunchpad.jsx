@@ -19,3 +19,10 @@ export function TokenLaunchpad() {
         <button onClick={createToken} className='btn'>Create a token</button>
     </div>
 }
+//d apps        
+// 1. Create a token on Solana
+// 2. Create a token on Ethereum
+// 3. Create a token on Polygon
+// 4. Create a token on Binance Smart Chain
+// 5. Create a token on Avalanche
+// 6. Create a token on Fantom
