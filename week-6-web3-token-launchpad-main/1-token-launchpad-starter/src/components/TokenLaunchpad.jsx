@@ -25,4 +25,4 @@ export function TokenLaunchpad() {
 // 3. Create a token on Polygon
 // 4. Create a token on Binance Smart Chain
 // 5. Create a token on Avalanche
-// 6. Create a token on Fantom
+// 6. Create a 
