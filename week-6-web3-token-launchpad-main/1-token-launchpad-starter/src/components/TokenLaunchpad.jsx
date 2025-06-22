@@ -21,5 +21,4 @@ export function TokenLaunchpad() {
 }
 //d apps        
 // 1. Create a token on Solana
-// 2. Create a token on Ethereum
-// 3. Create a 
+// 2. Create a token 
