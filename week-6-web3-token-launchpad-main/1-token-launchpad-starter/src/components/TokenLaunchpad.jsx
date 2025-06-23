@@ -20,5 +20,3 @@ export function TokenLaunchpad() {
     </div>
 }
 // code 
-
-// The component is exported for use in other parts of the application.
