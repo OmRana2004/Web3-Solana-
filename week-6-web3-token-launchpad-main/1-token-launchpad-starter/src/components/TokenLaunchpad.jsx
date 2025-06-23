@@ -21,8 +21,6 @@ export function TokenLaunchpad() {
 }
 // code 
 
-
-// The `inputText` class is used for.
 // styling the input fields, and the `btn` class is used for styling the button.
 // The component is designed to be a part of a larger application that interacts with the Solana blockchain.
 // The `createToken` function is a placeholder for the logic that will handle the creation of the token on the Solana blockchain.
