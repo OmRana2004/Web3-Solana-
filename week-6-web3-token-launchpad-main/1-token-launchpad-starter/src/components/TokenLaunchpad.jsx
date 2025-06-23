@@ -22,7 +22,7 @@ export function TokenLaunchpad() {
 // code 
 
 
-// The `createToken` function is currently empty and should be implemented to handle the token creation logic.              
+        
 // The component is styled to center the content vertically and horizontally within the viewport.
 // The `inputText` class is used for.
 // styling the input fields, and the `btn` class is used for styling the button.
