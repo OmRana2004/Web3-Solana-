@@ -21,8 +21,6 @@ export function TokenLaunchpad() {
 }
 // code 
 
-
-// The component is designed to be a part of a larger application that interacts with the Solana blockchain.
 // The `createToken` function is a placeholder for the logic that will handle the creation of the token on the Solana blockchain.
 // The component is a functional React component that returns a JSX structure.
 // The component is exported for use in other parts of the application.
