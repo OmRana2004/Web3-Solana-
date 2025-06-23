@@ -21,7 +21,6 @@ export function TokenLaunchpad() {
 }
 // code 
 
-// This component is a simple token 
 // It includes input fields for token name, symbol, image URL, and initial supply.
 // The `createToken` function is currently empty and should be implemented to handle the token creation logic.              
 // The component is styled to center the content vertically and horizontally within the viewport.
