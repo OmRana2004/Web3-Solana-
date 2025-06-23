@@ -21,5 +21,4 @@ export function TokenLaunchpad() {
 }
 // code 
 
-// The component is a functional React component that returns a JSX structure.
 // The component is exported for use in other parts of the application.
