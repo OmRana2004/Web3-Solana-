@@ -17,4 +17,4 @@ export function RequestAirdrop() {
         <input id="amount" type="text" placeholder="Amount" />
         <button onClick={requestAirdrop}>Request Airdrop</button>
     </div>
-}
+} 
