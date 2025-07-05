@@ -26,8 +26,8 @@ function App() {
             <WalletDisconnectButton/>
             {/* <RequestAirdrop /> */}
             {/* <ShowBalance /> */}
-            {/* <SendTokens /> */}
-            { <SignMessage /> }
+            <SendTokens />
+            {/* { <SignMessage /> } */}
           </div>
         </WalletModalProvider>
       </WalletProvider>
