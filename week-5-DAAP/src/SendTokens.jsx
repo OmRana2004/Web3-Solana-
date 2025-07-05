@@ -28,4 +28,4 @@ export function SendTokens() {
 }
 
 // upadted to use SystemProgram.transfer
-// import { useWallet } from "@solana/
+// import { useWallet }
