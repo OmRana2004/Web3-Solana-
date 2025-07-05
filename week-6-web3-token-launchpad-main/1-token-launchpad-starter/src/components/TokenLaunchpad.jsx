@@ -73,4 +73,3 @@ export function TokenLaunchpad() {
     </div>
   );
 }
-// hello world is my first code I wrote in web2 world.!
