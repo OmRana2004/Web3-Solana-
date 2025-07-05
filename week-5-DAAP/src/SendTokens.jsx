@@ -28,4 +28,3 @@ export function SendTokens() {
 }
 
 // upadted to use SystemProgram.transfer
-// imports
