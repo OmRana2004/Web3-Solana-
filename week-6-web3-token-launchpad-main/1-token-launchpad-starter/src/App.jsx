@@ -16,7 +16,7 @@ import "@solana/wallet-adapter-react-ui/styles.css";
 function App() {
   return (
     <ConnectionProvider endpoint={"https://api.devnet.solana.com"}>
-      <WalletProvider wallets={[]}>
+      <WalletProvider wallets={[]} autoConnect>
         <WalletModalProvider>
 
 

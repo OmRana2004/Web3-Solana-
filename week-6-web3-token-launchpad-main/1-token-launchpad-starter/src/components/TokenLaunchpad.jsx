@@ -1,7 +1,21 @@
+import { createMint } from "@solana/spl-token";
 
 export function TokenLaunchpad() {
 
     function createToken() {
+        const name = document.getElementById("name").value;
+        const symbol = document.getElementById("symbol").value;
+        const imageUrl = document.getElementById("imageUrl").value;
+        const initialSupply = document.getElementById("initalSupply").value;
+
+        // console.log({
+        //     name,
+        //     symbol,
+        //     imageUrl,
+        //     initialSupply
+        // })
+
+        createMint();
         
     }
     return  <div style={{
@@ -12,10 +26,10 @@ export function TokenLaunchpad() {
         flexDirection: 'column'
     }}>
         <h1>Solana Token Launchpad</h1>
-        <input className='inputText' type='text' placeholder='Name'></input> <br />
-        <input className='inputText' type='text' placeholder='Symbol'></input> <br />
-        <input className='inputText' type='text' placeholder='Image URL'></input> <br />
-        <input className='inputText' type='text' placeholder='Initial Supply'></input> <br />
+        <input id="name" className='inputText' type='text' placeholder='Name'></input> <br />
+        <input id="symbol" className='inputText' type='text' placeholder='Symbol'></input> <br />
+        <input id="imageUrl" className='inputText' type='text' placeholder='Image URL'></input> <br />
+        <input id="initalSupply" className='inputText' type='text' placeholder='Initial Supply'></input> <br />
         <button onClick={createToken} className='btn'>Create a token</button>
     </div>
 }
