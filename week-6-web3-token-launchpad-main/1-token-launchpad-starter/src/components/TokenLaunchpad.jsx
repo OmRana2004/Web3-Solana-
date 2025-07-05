@@ -61,7 +61,7 @@ export function TokenLaunchpad() {
         alignItems: "center",
         flexDirection: "column",
       }}
-      //is className "tokenLaunchpad" 
+      
     >
       <h1>Solana Token Launchpad</h1>
       <input id="name" className="inputText" type="text" placeholder="Name" /> <br />
