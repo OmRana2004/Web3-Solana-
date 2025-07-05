@@ -26,3 +26,6 @@ export function SendTokens() {
         <button onClick={sendTokens}>Send</button>
     </div>
 }
+
+// upadted to use SystemProgram.transfer
+// import { useWallet } from "@solana/
