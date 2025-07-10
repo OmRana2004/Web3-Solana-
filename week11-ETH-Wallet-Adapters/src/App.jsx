@@ -1,6 +1,6 @@
 import "./App.css"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
-import { http, createConfig, WagmiProvider, useConnect} from "wagmi"
+import { http, createConfig, WagmiProvider, useConnect, useAccount, useBalance} from "wagmi"
 import { mainnet } from "wagmi/chains"
 import { injected } from "wagmi/connectors"
 
@@ -22,8 +22,22 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <WalletConnector />
         <EthSend />
+        <MyAddress />
       </QueryClientProvider>
       </WagmiProvider>
+  )
+}
+
+function MyAddress() {
+  const { address } = useAccount()
+  const balance = useBalance({ address })
+
+  return(
+    <div>
+      {address}
+      {balance?.data?.value}
+    </div>
+
   )
 }
 
