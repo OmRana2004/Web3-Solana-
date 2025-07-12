@@ -24,8 +24,8 @@ function App() {
           <div style={{width:"100vh", display:"flex", justifyContent:"center", gap:"4rem"}}>
             <WalletMultiButton />
             <WalletDisconnectButton/>
-            {/* <RequestAirdrop /> */}
-            {/* <ShowBalance /> */}
+            <RequestAirdrop />
+            <ShowBalance />
             <SendTokens />
             {/* { <SignMessage /> } */}
           </div>
