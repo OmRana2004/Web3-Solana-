@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import axios from "axios"
+import "./App.css"
+import {Transaction, Connection, PublicKey, SystemProgram, LAMPORTS_PER_SOL} from "@solana/web3.js"
 
-function App() {
-  const [count, setCount] = useState(0)
+const connection = new Connection("https://solana-mainnet.g.alchemy.com/v2/9RyxbDqU26Qcey-bCPUVB")
+const fromPubkey =  new PublicKey("7acexS4Asdvum7prJ6m7DKmYFRtDHQjkVSywtMfs7AFn")
+export default function App() {
+
+  async function sendSol() {
+    const ix = SystemProgram.transfer({
+      fromPubkey: fromPubkey,
+      toPubkey: new PublicKey ("JDx7VT6GCnJtEiV51f7fPMHHvoqcVeXPjYWF6zYnWrLU"),
+      lamports: 0.01 * LAMPORTS_PER_SOL
+    })
+    const tx = new Transaction().add(ix);
+
+    const { blockhash } = await connection.getLatestBlockhash();
+    tx.recentBlockhash = blockhash
+    tx.feePayer = fromPubkey
+    
+    // convert the transaction to a bunch of bytes
+    const serializedTx = tx.serialize({
+      requireAllSignatures: false,
+      verifySignatures: false
+    })
+
+    console.log(serializedTx);
+
+    await axios.post("/api/v1/txn/signin", {
+      message: serializedTx,
+      retry: false
+    })
+
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <input type="text"placeholder="Ammount"></input>
+      <input type="text"placeholder="Address"></input>
+      <button onClick={sendSol}>Submit</button>
+    </div>
   )
 }
-
-export default App
